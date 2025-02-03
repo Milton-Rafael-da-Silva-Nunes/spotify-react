@@ -1,9 +1,9 @@
 import React from "react";
 import './Header.css';
 
-import iconLeft from '../assets/icons/small-left.png';
-import iconRight from '../assets/icons/small-right.png';
-import iconSearch from '../assets/icons/search.png';
+import iconLeft from '../../assets/icons/small-left.png';
+import iconRight from '../../assets/icons/small-right.png';
+import iconSearch from '../../assets/icons/search.png';
 
 const Header = () => {
     return (
@@ -21,7 +21,7 @@ const Header = () => {
                 <img src={iconSearch} alt="" />
                 <input
                     type="text"
-                    maxlength="800"
+                    maxLength="800"
                     autoCorrect="off"
                     autoCapitalize="off"
                     spellCheck="false"

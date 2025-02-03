@@ -1,0 +1,44 @@
+.menu_navegacao {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 320px;
+    height: 180px;
+    margin-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.menu_navegacao .logo img {
+    width: 130px;
+    padding: 10px 0 0 10px;
+}
+
+.menu_navegacao ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.menu_navegacao ul li {
+    list-style: none;
+}
+
+.menu_navegacao a {
+    display: block;
+    color: #b3b3b3;
+    text-decoration: none;
+    padding: 10px 0 10px 10px;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.menu_navegacao a:hover {
+    color: #fff;
+    transform: scale(1.04);
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+    /* Efeito de brilho suave */
+}
