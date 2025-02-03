@@ -1,21 +1,32 @@
 import React from "react";
 import './Header.css';
 
+import iconLeft from '../assets/icons/small-left.png';
+import iconRight from '../assets/icons/small-right.png';
+import iconSearch from '../assets/icons/search.png';
+
 const Header = () => {
     return (
         <nav className="header__navegacao">
-            <div claclassNamess="navegacao">
+            <div className="navegacao">
                 <button className="button-left">
-                    <img src="./src/assets/icons/small-left.png" alt="Seta Esquerda" />
+                    <img src={iconLeft} alt="Seta Esquerda" />
                 </button>
-                <button class="button-rigth">
-                    <img src="./src/assets/icons/small-right.png" alt="Seta Direita" />
+                <button className="button-rigth">
+                    <img src={iconRight} alt="Seta Direita" />
                 </button>
             </div>
 
-            <div className="header-search">
-                <img src="./src/assets/icons/search.png" alt="" />
-                <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+            <div className="header__search">
+                <img src={iconSearch} alt="" />
+                <input
+                    type="text"
+                    maxlength="800"
+                    autoCorrect="off"
+                    autoCapitalize="off"
+                    spellCheck="false"
+                    placeholder="O que você quer ouvir?"
+                />
             </div>
 
             <div className="header__login">
