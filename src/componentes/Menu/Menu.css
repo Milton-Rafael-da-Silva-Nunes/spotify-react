@@ -5,7 +5,7 @@
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     width: 320px;
-    height: 180px;
+    height: 100%;
     margin-top: 10px;
     position: fixed;
     top: 0;
@@ -24,11 +24,11 @@
     padding-top: 10px;
 }
 
-.menu_navegacao ul li {
+.menu_navegacao .menu__links li {
     list-style: none;
 }
 
-.menu_navegacao a {
+.menu_navegacao .menu__links a {
     display: block;
     color: #b3b3b3;
     text-decoration: none;
@@ -36,9 +36,54 @@
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
-.menu_navegacao a:hover {
+.menu_navegacao .menu__links a:hover {
     color: #fff;
     transform: scale(1.04);
     text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
     /* Efeito de brilho suave */
 }
+
+.container__biblioteca {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 10px 0;
+}
+
+.container__biblioteca .titulo__biblioteca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px 10px 25px;
+    color: #b3b3b3;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+
+.container__biblioteca .titulo__biblioteca span {
+    padding-left: 15px;
+}
+
+.container__biblioteca .titulo__biblioteca a {
+    color: #b3b3b3;
+    text-decoration: none;
+}
+
+.container__biblioteca .titulo__biblioteca span:hover {
+    color: #fff;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+    /* Efeito de brilho suave */
+}
+
+.container__playlist {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #242424;
+    margin: 0px 10px 10px 10px;
+    border-radius: 8px;  
+}
+
+.container__playlist h1 {
+}
+
