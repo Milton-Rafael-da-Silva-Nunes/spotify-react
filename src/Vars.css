@@ -2,7 +2,23 @@
     /* Fonte */
     --font-dm-sans: 'DM Sans', sans-serif;
 
+    
+
     /* Cores de Fundo */ 
     --bg-cinza_escuro: #121212;
     --bg-cinza_claro: #242424;
+    --bg-branco: #fff;
+    --bg-verde_spotify: #1db954;
+
+
+
+    /* Cores de Texto */
+    --bg-cinza_letra: #b3b3b3;
+    --bg-branco_letra: #fff;
+    --cl-preto_letra: #000;
+
+
+    
+    /* Efeito Shadow brilhante letra */
+    --shadow-brilho: 0px 0px 5px rgba(255, 255, 255, 0.7);
 }
