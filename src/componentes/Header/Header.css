@@ -79,6 +79,7 @@
     background-color: transparent;
     margin-right: 32px;
     border: none;
+    cursor: pointer;
 }
 
 .header__login .login {
@@ -89,6 +90,7 @@
     font-weight: 700;
     border-radius: 40px;
     border: none;
+    cursor: pointer;
 }
 
 .header__search:hover {
