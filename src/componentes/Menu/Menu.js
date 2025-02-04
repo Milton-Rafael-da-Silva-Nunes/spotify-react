@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faSearch, faBook, faPlus, faCookie, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faSearch, faBook, faPlus, faGlobe, faMusic, faHeadphones, faDrum, faGuitar, faPlay, faMicrophone, faPodcast } from '@fortawesome/free-solid-svg-icons';
 import './Menu.css';
 
 import logoPrincipal from '../../assets/icons/logo-spotify.png';
@@ -46,12 +46,44 @@ const Menu = () => {
                 </section>
             </div>
 
-            <div className="menu-cookies">
-                <a href="/">
-                    <FontAwesomeIcon icon={faCookie} />
-                    <span>Cookies</span>
-                </a>
-            </div>
+            <section className="menu-section__generos">
+                <div className="section-generos__conteudo">
+                    <a href="/">
+                        <FontAwesomeIcon icon={faGuitar} />
+                        <span>Rock</span>
+                    </a>
+
+                    <a href="/">
+                        <FontAwesomeIcon icon={faPlay} />
+                        <span>Funk</span>
+                    </a>
+
+                    <a href="/">
+                        <FontAwesomeIcon icon={faMusic} />
+                        <span>Pop</span>
+                    </a>
+
+                    <a href="/">
+                        <FontAwesomeIcon icon={faDrum} />
+                        <span>Pagode</span>
+                    </a>
+
+                    <a href="/">
+                        <FontAwesomeIcon icon={faHeadphones} />
+                        <span>Dance</span>
+                    </a>
+
+                    <a href="/">
+                        <FontAwesomeIcon icon={faMicrophone} />
+                        <span>Sertanejo</span>
+                    </a>
+
+                    <a href="/">
+                        <FontAwesomeIcon icon={faPodcast} />
+                        <span>Podcast</span>
+                    </a>
+                </div>
+            </section>
 
             <div className="menu-linguagem">
                 <a href="/">
