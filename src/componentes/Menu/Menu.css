@@ -81,7 +81,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 20px;
-    background-color: #302e2e;
+    background-color: var(--bg-arrow-color);
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;

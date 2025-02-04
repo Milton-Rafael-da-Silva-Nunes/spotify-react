@@ -29,14 +29,14 @@
     width: 32px;
     height: 32px;
     background: #000;
-    background-color: var(--bg-arrow-color);
+    background-color: var(--bg-cinza_escuro);
     border-radius: 50%;
     border: none;
     cursor: pointer;
 }
 
 .button-left:hover, .button-rigth:hover {
-    background-color: #242424;
+    background-color: var(--bg-cinza_claro);
 }
 
 .header__login {
@@ -70,6 +70,8 @@
     overflow: hidden;
     white-space: nowrap;
     outline: none;
+    font-size: 15px;
+    font-family: var(--font-dm-sans);
 }
 
 .header__login .subscribe {
@@ -80,6 +82,8 @@
     margin-right: 32px;
     border: none;
     cursor: pointer;
+    font-size: 17px;
+    font-family: var(--font-dm-sans);
 }
 
 .header__login .login {
@@ -91,6 +95,8 @@
     border-radius: 40px;
     border: none;
     cursor: pointer;
+    font-size: 17px;
+    font-family: var(--font-dm-sans);
 }
 
 .header__search:hover {

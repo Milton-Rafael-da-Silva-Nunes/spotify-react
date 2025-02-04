@@ -1,0 +1,8 @@
+:root {
+    /* Fonte */
+    --font-dm-sans: 'DM Sans', sans-serif;
+
+    /* Cores de Fundo */ 
+    --bg-cinza_escuro: #121212;
+    --bg-cinza_claro: #242424;
+}
