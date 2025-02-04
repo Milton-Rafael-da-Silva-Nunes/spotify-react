@@ -59,7 +59,6 @@ const Menu = () => {
                     <span>Português do Brasil</span>
                 </a>
             </div>
-
         </nav>
     );
 }
