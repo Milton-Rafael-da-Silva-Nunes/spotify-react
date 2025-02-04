@@ -2,7 +2,7 @@
     /* Fonte */
     --font-dm-sans: 'DM Sans', sans-serif;
 
-    
+
 
     /* Cores de Fundo */ 
     --bg-cinza_escuro: #121212;
@@ -13,9 +13,9 @@
 
 
     /* Cores de Texto */
-    --bg-cinza_letra: #b3b3b3;
-    --bg-branco_letra: #fff;
-    --cl-preto_letra: #000;
+    --txt-cinza_letra: #b3b3b3;
+    --txt-branco_letra: #fff;
+    --txt-preto_letra: #000;
 
 
     

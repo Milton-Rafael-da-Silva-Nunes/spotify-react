@@ -33,14 +33,14 @@
 
 .menu_navegacao .menu__links a {
     display: block;
-    color: var(--bg-cinza_letra);
+    color: var(--txt-cinza_letra);
     text-decoration: none;
     padding: 10px 0 10px 0px;
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .menu_navegacao .menu__links a:hover {
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
     transform: scale(1.04);
     text-shadow: var(--shadow-brilho);
     /* Efeito de brilho suave */
@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 25px 10px 25px;
-    color: var(--bg-cinza_letra);
+    color: var(--txt-cinza_letra);
     text-decoration: none;
     transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
@@ -68,13 +68,13 @@
 }
 
 .menu__biblioteca .titulo__biblioteca span:hover {
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
     text-shadow: var(--shadow-brilho);
     /* Efeito de brilho suave */
 }
 
 .menu__biblioteca .titulo__biblioteca a {
-    color: var(--bg-cinza_letra);
+    color: var(--txt-cinza_letra);
     text-decoration: none;
 }
 
@@ -91,7 +91,7 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
 }
 
 .section-playlist__conteudo .titulo {
@@ -108,7 +108,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--bg-branco);
-    color: var(--cl-preto_letra);
+    color: var(--txt-preto_letra);
     border-radius: 20px;
     font-size: 12px;
     font-weight: 700;
@@ -122,7 +122,7 @@
 }
 
 .section-playlist__conteudo .btn-criar-playlist:hover {
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
     background-color: var(--bg-verde_spotify);
     transform: scale(1.04);
 }
@@ -132,18 +132,18 @@
 }
 
 .menu-cookies a {
-    color: var(--bg-cinza_letra);
+    color: var(--txt-cinza_letra);
     text-decoration: none;
     padding-left: 25px;
 }
 
 .menu-cookies span {
-    color: var(--bg-cinza_letra);
+    color: var(--txt-cinza_letra);
     padding-left: 5px;
 }
 
 .menu-cookies span:hover {
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
     text-shadow: var(--shadow-brilho);
 }
 
@@ -153,7 +153,7 @@
     align-items: center;
     padding: 2px;
     margin: 0 0 10px 50px;
-    border: 1px solid var(--bg-cinza_letra);
+    border: 1px solid var(--txt-cinza_letra);
     border-radius: 10px;
     width: 200px;
     position: fixed;
@@ -161,16 +161,16 @@
 }
 
 .menu-linguagem a {
-    color: var(--bg-cinza_letra);
+    color: var(--txt-cinza_letra);
     text-decoration: none;
 }
 
 .menu-linguagem span {
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
     padding-left: 5px;
 }
 
 .menu-linguagem span:hover {
-    color: var(--bg-branco_letra);
+    color: var(--txt-branco_letra);
     text-shadow: var(--shadow-brilho)
 }
