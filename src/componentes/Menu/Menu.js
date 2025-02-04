@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faSearch, faBook, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faHouse, faSearch, faBook, faPlus, faCookie, faGlobe } from '@fortawesome/free-solid-svg-icons';
 import './Menu.css';
 
 import logoPrincipal from '../../assets/icons/logo-spotify.png';
@@ -28,20 +28,36 @@ const Menu = () => {
             </ul>
 
 
-            <div className="container__biblioteca">
+            <div className="menu__biblioteca">
                 <div className="titulo__biblioteca">
                     <a href="/" aria-label="Sua Biblioteca">
                         <FontAwesomeIcon icon={faBook} />
                         <span>Sua Biblioteca</span>
                     </a>
-                    <FontAwesomeIcon icon={faPlus} style={{fontSize: '24px'}}/>
+                    <FontAwesomeIcon icon={faPlus} style={{ fontSize: '24px' }} />
                 </div>
 
-                <div className="container__playlist">
-                    <h1>Crie sua primeira Playlist</h1>
-                    <p>É fácil, vamos te ajudar</p>
-                </div>
+                <section className="menu-section__playlist">
+                    <div className="section-playlist__conteudo">
+                        <span className="text titulo">Crie sua primeira Playlist</span>
+                        <span className="text subtitulo">É fácil, vamos te ajudar</span>
+                        <button className="btn-criar-playlist">Criar Playlist</button>
+                    </div>
+                </section>
+            </div>
 
+            <div className="menu-cookies">
+                <a href="/">
+                    <FontAwesomeIcon icon={faCookie} />
+                    <span>Cookies</span>
+                </a>
+            </div>
+
+            <div className="menu-linguagem">
+                <a href="/">
+                    <FontAwesomeIcon icon={faGlobe} />
+                    <span>Português do Brasil</span>
+                </a>
             </div>
 
         </nav>
