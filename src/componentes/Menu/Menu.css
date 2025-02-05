@@ -159,7 +159,6 @@
     display: flex;
     flex-direction: column;
     margin: 0px 10px;
-    padding: 10px 15px;
     position: relative;
     overflow: hidden;
 }
@@ -180,7 +179,18 @@
 .menu-section__generos .section-generos__conteudo {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+}
+
+.menu-section__generos .section-generos__conteudo ul {
+    padding: 10px;
+    margin: 0; /* Remove margens extras que possam estar aplicando espaço */
+}
+
+.menu-section__generos .section-generos__conteudo ul li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 2px 0;
 }
 
 .section-generos__conteudo a {
@@ -188,13 +198,8 @@
     font-family: var(--font-dm-sans);
     text-decoration: none;
     text-transform: none;
-}
-
-.section-generos__conteudo a:nth-child(2) span,
-.section-generos__conteudo a:nth-child(6) span,
-.section-generos__conteudo a:nth-child(7) span {    
-    padding-left: 10px;
-    /* Propriedade para alinhas textos conforme os demais devido os icones */
+    display: flex;
+    align-items: center;
 }
 
 .section-generos__conteudo span {
@@ -203,10 +208,16 @@
     font-size: 16px;
     padding-left: 6px;
 }
+
 .section-generos__conteudo span:hover {
     text-decoration: underline;
     color: var(--txt-branco_letra);
     text-shadow: var(--shadow-brilho);
+}
+
+.section-generos__conteudo a svg {
+    width: 16px;  /* Ajuste o tamanho do ícone */
+    height: 20px;
 }
 
 .menu-linguagem {

@@ -48,40 +48,56 @@ const Menu = () => {
 
             <section className="menu-section__generos">
                 <div className="section-generos__conteudo">
-                    <a href="/">
-                        <FontAwesomeIcon icon={faGuitar} />
-                        <span>Rock</span>
-                    </a>
+                    <ul>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faGuitar} />
+                                <span>Rock</span>
+                            </a>
+                        </li>
 
-                    <a href="/">
-                        <FontAwesomeIcon icon={faPlay} />
-                        <span>Funk</span>
-                    </a>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faPlay} />
+                                <span>Funk</span>
+                            </a>
+                        </li>
 
-                    <a href="/">
-                        <FontAwesomeIcon icon={faMusic} />
-                        <span>Pop</span>
-                    </a>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faMusic} />
+                                <span>Pop</span>
+                            </a>
+                        </li>
 
-                    <a href="/">
-                        <FontAwesomeIcon icon={faDrum} />
-                        <span>Pagode</span>
-                    </a>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faDrum} />
+                                <span>Pagode</span>
+                            </a>
+                        </li>
 
-                    <a href="/">
-                        <FontAwesomeIcon icon={faHeadphones} />
-                        <span>Dance</span>
-                    </a>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faHeadphones} />
+                                <span>Dance</span>
+                            </a>
+                        </li>
 
-                    <a href="/">
-                        <FontAwesomeIcon icon={faMicrophone} />
-                        <span>Sertanejo</span>
-                    </a>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faMicrophone} />
+                                <span>Sertanejo</span>
+                            </a>
+                        </li>
 
-                    <a href="/">
-                        <FontAwesomeIcon icon={faPodcast} />
-                        <span>Podcast</span>
-                    </a>
+                        <li>
+                            <a href="/">
+                                <FontAwesomeIcon icon={faPodcast} />
+                                <span>Podcast</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
