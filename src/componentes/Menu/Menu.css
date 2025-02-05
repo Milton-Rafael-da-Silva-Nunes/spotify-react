@@ -207,12 +207,13 @@
     font-family: var(--font-dm-sans);
     font-size: 16px;
     padding-left: 6px;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .section-generos__conteudo span:hover {
-    text-decoration: underline;
     color: var(--txt-branco_letra);
     text-shadow: var(--shadow-brilho);
+    transform: scale(1.04);
 }
 
 .section-generos__conteudo a svg {
