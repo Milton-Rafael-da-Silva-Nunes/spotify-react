@@ -1,25 +1,25 @@
 .main-container__header {
     display: flex;
     flex-direction: column;
-    height: 68vh;
     margin-left: 330px;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
 }
 
 .main-header__playlists {
-    display: flex;
-    flex-direction: column;
+    padding-left: 10px;
     font-family: var(--font-dm-sans);
     color: var(--txt-branco_letra);
-    margin: 24px;
+    margin: 15px;
 }
 
-.playlists h1 {
+.main-header__texto h1 {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 15px;
 }
 
-.playlists h2 {
+.main-header__texto h2 {
     font-size: 20px;
     font-weight: 500;
 }
@@ -47,6 +47,7 @@
     grid-gap: 16px;
     gap: 16px;
     margin-bottom: 16px;
+    padding: 0 10px;
 }
 
 .main-scroll__section .cards {
@@ -55,7 +56,7 @@
     height: 200px;
     overflow: hidden;
     border-radius: 10px;
-    transition: trasform 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .cards:hover {
@@ -69,7 +70,6 @@
     font-size: 24px;
     font-weight: 700;
 }
-
 
 .card-1 { background-color: rgb(0, 100, 80); }
 .card-2 { background-color: rgb(132, 0, 231); }

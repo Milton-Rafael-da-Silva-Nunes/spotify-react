@@ -44,7 +44,7 @@ const Main = () => {
             <div className="main-container__header">
                 {/* Seção de boas-vindas */}
                 <div className="main-header__playlists">
-                    <div className="playlists">
+                    <div className="main-header__texto">
                         <h1>Boas vindas</h1>
                         <h2>Navegar por todas as seções</h2>
                     </div>
