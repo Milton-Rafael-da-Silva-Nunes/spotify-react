@@ -7,6 +7,8 @@
     /* Cores de Fundo */ 
     --bg-cinza_escuro: #121212;
     --bg-cinza_claro: #242424;
+    --bg-card_artista: #181818;
+    --bg-hover-card_artista: #252525;
     --bg-branco: #fff;
     --bg-verde_spotify: #1db954;
 
@@ -22,4 +24,14 @@
     
     /* Efeito Shadow brilhante letra */
     --shadow-brilho: 0px 0px 5px rgba(255, 255, 255, 0.7);
+
+
+    /* Colunas eTamanhos */
+    --column-count: 5;
+    --grid-gap: 24px;
+    --min-container-width: 372px;
+
+
+    /* Scroll da pagina de Album */
+    --scrollbar-color: trasparent;
 }
