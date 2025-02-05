@@ -34,39 +34,44 @@ const playlists = [
     { img: img11, title: "Rock" },
     { img: img12, title: "Hip Hop" },
     { img: img13, title: "Indie" },
-    { img: img14, title: "Relax" },
+    { img: img14, title: "Dance" },
     { img: img15, title: "Música Latina" },
 ];
 
-const Main = () => {
+const Main = ({ generoSelecionado }) => {
+    const playlistsFiltradas = generoSelecionado
+        ? playlists.filter((playlist) => playlist.title.toLowerCase().includes(generoSelecionado.toLowerCase()))
+        : playlists;
+
     return (
         <main className="main-container">
             <div className="main-container__header">
-                {/* Seção de boas-vindas */}
                 <div className="main-header__playlists">
                     <div className="main-header__texto">
-                        <h1>Boas vindas</h1>
-                        <h2>Navegar por todas as seções</h2>
+                        <h1>{generoSelecionado ? `${generoSelecionado}` : "Boas Vindas"}</h1>
+                        <h2>{generoSelecionado ? '' : "Navegar por todas as seções"}</h2>
                     </div>
 
-                    {/* Scrollable container para as playlists */}
                     <div className="main-scroll__container">
                         <div className="main-scroll__conteudo">
                             <section className="main-scroll__section">
-                                {playlists.map((playlist, index) => (
-                                    <a href="/" className="cards" key={index}>
-                                        <div className={`cards card-${index + 1}`}>
-                                            <img src={playlist.img} alt={`capa-${index + 1}`} />
-                                            <span>{playlist.title}</span>
-                                        </div>
-                                    </a>
-                                ))}
+                                {playlistsFiltradas.length > 0 ? (
+                                    playlistsFiltradas.map((playlist, index) => (
+                                        <a href="/" className="cards" key={index}>
+                                            <div className={`cards card-${index + 1}`}>
+                                                <img src={playlist.img} alt={`capa-${index + 1}`} />
+                                                <span>{playlist.title}</span>
+                                            </div>
+                                        </a>
+                                    ))
+                                ) : (
+                                    <p className="no-results">Album não encontrado "{generoSelecionado}"</p>
+                                )}
                             </section>
                         </div>
                     </div>
                 </div>
 
-                {/* Seção de artista (escondida por padrão) */}
                 <div id="resultado-artista" className="hidden">
                     <div className="grid-container">
                         <div className="artista-card">
@@ -78,7 +83,6 @@ const Main = () => {
                                     </span>
                                 </div>
                             </div>
-
                             <div className="card-texto">
                                 <a title="Foo Fighters" className="vst" href="/">
                                     <span className="artista-nome">Foo Fighters</span>

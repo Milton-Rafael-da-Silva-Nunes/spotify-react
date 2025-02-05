@@ -1,11 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import './Header.css';
 
 import iconLeft from '../../assets/icons/small-left.png';
 import iconRight from '../../assets/icons/small-right.png';
 import iconSearch from '../../assets/icons/search.png';
 
-const Header = () => {
+// Usando forwardRef para permitir que a ref seja passada
+const Header = forwardRef((props, ref) => {
     return (
         <nav className="header__navegacao">
             <div className="navegacao">
@@ -20,6 +21,7 @@ const Header = () => {
             <div className="header__search">
                 <img src={iconSearch} alt="" />
                 <input
+                    ref={ref} // A ref é passada aqui
                     type="text"
                     maxLength="800"
                     autoCorrect="off"
@@ -35,6 +37,6 @@ const Header = () => {
             </div>
         </nav>
     );
-}
+});
 
 export default Header;
