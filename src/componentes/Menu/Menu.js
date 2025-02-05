@@ -1,9 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faSearch, faBook, faPlus, faGlobe, faMusic, faHeadphones, faDrum, faGuitar, faPlay, faMicrophone, faPodcast } from '@fortawesome/free-solid-svg-icons';
-import './Menu.css';
+import styles from './Menu.module.css';
 
 import logoPrincipal from '../../assets/icons/logo-spotify.png';
+
+import MenuButton from "./MenuButton";
+import MenuGenero from "./MenuGenero";
 
 const generos = [
     { nome: "Rock", icon: faGuitar },
@@ -16,39 +19,41 @@ const generos = [
 ];
 
 const Menu = ({ setTelaAtiva, setGeneroSelecionado, inputBuscaRef }) => {
+
+    const handleBuscaClick = () => {
+        setTelaAtiva("buscar");
+        if (inputBuscaRef && inputBuscaRef.current) {
+            inputBuscaRef.current.focus();
+        }
+    };
+
     return (
-        <nav className="menu_navegacao">
-            <div className="logo">
+        <nav className={styles.menu_navegacao}>
+            <div className={styles.logo}>
                 <a href="/">
                     <img src={logoPrincipal} alt="Logo Principal" />
                 </a>
             </div>
 
-            <ul className="menu__links">
-                <li>
-                    <button onClick={() => {
-                        setTelaAtiva("inicio"); // Muda para a tela de início
-                        setGeneroSelecionado(null); // Reseta o gênero
-                    }} aria-label="Início">
-                        <FontAwesomeIcon icon={faHouse} />
-                        <span> Início</span>
-                    </button>
-                </li>
-                <li>
-                    <button onClick={() => {
-                        setTelaAtiva("buscar"); // Muda para a tela de busca
-                        if (inputBuscaRef && inputBuscaRef.current) {
-                            inputBuscaRef.current.focus(); // Define o foco no input de busca
-                        }
-                    }} aria-label="Buscar">
-                        <FontAwesomeIcon icon={faSearch} />
-                        <span> Buscar</span>
-                    </button>
-                </li>
+            <ul className={styles.menu__links}>
+                <MenuButton
+                    icone={faHouse}
+                    label="Início"
+                    onClick={() => {
+                        setTelaAtiva("inicio");
+                        setGeneroSelecionado(null);
+                    }}
+                />
+
+                <MenuButton
+                    icone={faSearch}
+                    label="Buscar"
+                    onClick={handleBuscaClick}
+                />
             </ul>
 
-            <div className="menu__biblioteca">
-                <div className="titulo__biblioteca">
+            <div className={styles.menu__biblioteca}>
+                <div className={styles.titulo__biblioteca}>
                     <a href="/" aria-label="Sua Biblioteca">
                         <FontAwesomeIcon icon={faBook} />
                         <span>Sua Biblioteca</span>
@@ -56,31 +61,30 @@ const Menu = ({ setTelaAtiva, setGeneroSelecionado, inputBuscaRef }) => {
                     <FontAwesomeIcon icon={faPlus} style={{ fontSize: '24px' }} />
                 </div>
 
-                <section className="menu-section__playlist">
-                    <div className="section-playlist__conteudo">
-                        <span className="text titulo">Crie sua primeira Playlist</span>
-                        <span className="text subtitulo">É fácil, vamos te ajudar</span>
-                        <button className="btn-criar-playlist">Criar Playlist</button>
+                <section className={styles.section__playlist}>
+                    <div className={styles.playlist__conteudo}>
+                        <span className={styles.titulo}>Crie sua primeira Playlist</span>
+                        <span className={styles.subtitulo}>É fácil, vamos te ajudar</span>
+                        <button className={styles.btn_criar_playlist}>Criar Playlist</button>
                     </div>
                 </section>
             </div>
 
-            <section className="menu-section__generos">
-                <div className="section-generos__conteudo">
+            <section className={styles.section__generos}>
+                <div className={styles.generos__conteudo}>
                     <ul>
-                        {generos.map(({ nome, icon }) => (
-                            <li key={nome}>
-                                <button onClick={() => setGeneroSelecionado(nome)} className="menu-button">
-                                    <FontAwesomeIcon icon={icon} />
-                                    <span>{nome}</span>
-                                </button>
-                            </li>
+                        {generos.map(genero => (
+                            <MenuGenero
+                                key={genero.nome}
+                                genero={genero}
+                                onClick={setGeneroSelecionado}
+                            />
                         ))}
                     </ul>
                 </div>
             </section>
 
-            <div className="menu-linguagem">
+            <div className={styles.linguagem}>
                 <a href="/">
                     <FontAwesomeIcon icon={faGlobe} />
                     <span>Português do Brasil</span>

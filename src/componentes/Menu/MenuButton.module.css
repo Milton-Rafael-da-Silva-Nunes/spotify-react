@@ -1,0 +1,23 @@
+.button {
+    display: block;
+    font-family: var(--font-dm-sans);
+    color: var(--txt-cinza_letra);
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: none;
+    border: 0;
+    background: transparent;
+    padding: 10px 0 10px 0px;
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.04);
+    color: var(--txt-branco_letra);
+    text-shadow: var(--shadow-brilho);
+}
+
+.button span {
+    padding-left: 5px;
+}
